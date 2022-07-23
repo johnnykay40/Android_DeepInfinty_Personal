@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91244386a44d0a647b9d3fd53f056592, type: 3}
   m_Name: SO Player Movement
   m_EditorClassIdentifier: 
-  speedPlayer: 47.1
+  speedPlayer: 30
   vectorMovement: {x: 0, y: 0, z: 0}
