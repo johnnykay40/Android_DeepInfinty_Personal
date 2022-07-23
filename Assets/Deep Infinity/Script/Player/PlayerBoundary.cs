@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerBoundary : MonoBehaviour
 {
+    [Header("Data")]
     [SerializeField] private SOPlayerBoundary boundary;
 
     private void OnEnable()

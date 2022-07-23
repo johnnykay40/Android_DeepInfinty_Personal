@@ -7,14 +7,11 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private FixedJoystick fixedJoystick;
 
-    [Header("Values")]
-    [Range(0,100)] [SerializeField] internal float speedPlayer;
+    [Header("Data")]
+    [SerializeField] private SOPlayerMovement sOPlayerMovement;
 
     [Header("Physics")]
     [SerializeField] private Rigidbody rigidbodyPlayer;
-
-    [Header("Position")]
-    [SerializeField] private Vector3 vectorMovement;
 
     private void Update()
     {
@@ -26,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
         float movementHorizontal = fixedJoystick.Horizontal;
         float movementVertical = fixedJoystick.Vertical;
 
-        vectorMovement = new Vector3(movementHorizontal, 0f, movementVertical);
-        rigidbodyPlayer.velocity = vectorMovement * speedPlayer;
+        sOPlayerMovement.vectorMovement = new Vector3(movementHorizontal, 0f, movementVertical);
+        rigidbodyPlayer.velocity = sOPlayerMovement.vectorMovement * sOPlayerMovement.speedPlayer;
 
         OnCallBoundary?.Invoke(transform);
     }

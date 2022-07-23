@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "SO Deep Infinity")]
+[CreateAssetMenu(menuName = "SO Deep Infinity / Boundary")]
 public class SOPlayerBoundary : ScriptableObject
 {
    [SerializeField] internal float xMin;

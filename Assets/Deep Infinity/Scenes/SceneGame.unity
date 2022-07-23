@@ -1255,9 +1255,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fixedJoystick: {fileID: 1494813385}
-  speedPlayer: 30
+  sOPlayerMovement: {fileID: 11400000, guid: 2886e60a2d73977468c5721e4024a0f0, type: 2}
   rigidbodyPlayer: {fileID: 1800383473}
-  vectorMovement: {x: 0, y: 0, z: 0}
 --- !u!54 &1800383473
 Rigidbody:
   m_ObjectHideFlags: 0
