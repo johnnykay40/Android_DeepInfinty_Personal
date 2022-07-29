@@ -6,8 +6,18 @@ public class PowerUpSO : ScriptableObject
 {
     [SerializeField] internal float amount;
 
-    internal void Invoke(float value)
+    private void OnEnable()
     {
-        value += amount;    
+        PowerUps.OnSpeedPower += SpeedPower;
+    }
+
+    private void SpeedPower(SOPlayerMovement speedPower)
+    {
+        speedPower.speedPlayer += amount;        
+    }
+
+    private void OnDisable()
+    {
+        PowerUps.OnSpeedPower -= SpeedPower;
     }
 }

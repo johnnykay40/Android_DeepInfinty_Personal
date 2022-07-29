@@ -1,14 +1,35 @@
+using System;
 using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-    [SerializeField] internal PowerUpSO powerUpSO;
+    internal static event Action<SOPlayerMovement> OnSpeedPower;
     [SerializeField] internal SOPlayerMovement sOPlayerMovement;
 
-    private void OnTriggerEnter(Collider other)
+    [SerializeField] internal PowerUpSO UpSO;
+
+    
+    public enum TypePowerUp
     {
-        powerUpSO.Invoke(sOPlayerMovement.speedPlayer);
-        Debug.Log("Speed");
+        speed, health, rockets, bullets
     }
 
+    public TypePowerUp typePowerUp;
+    private void OnTriggerEnter(Collider other)
+    {        
+        switch (typePowerUp)
+        {
+            case TypePowerUp.speed:
+                OnSpeedPower?.Invoke(sOPlayerMovement);
+                break;
+            case TypePowerUp.health:
+                break;
+            case TypePowerUp.rockets:
+                break;
+            case TypePowerUp.bullets:
+                break;            
+        }
+
+        Destroy(gameObject);
+    }    
 }
