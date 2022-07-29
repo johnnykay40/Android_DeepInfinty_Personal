@@ -7,8 +7,6 @@ public class Health : MonoBehaviour
     [Range(0, 1000)]
     [SerializeField] internal float healthCurrent;
 
-    [SerializeField] private SOHealth sOHealth;
-
     internal void CheckHealth()
     {
         if(healthCurrent <= 0)
