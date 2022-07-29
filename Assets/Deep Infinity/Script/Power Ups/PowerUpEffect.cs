@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+[CreateAssetMenu(menuName = "SO Deep Infinity / PowerUpEffect")]
 
 public abstract class PowerUpEffect : ScriptableObject
 {
-    [SerializeField] private abstract void Apply(GameObject target);
+    [SerializeField] internal abstract void Apply(GameObject target);
 
 }

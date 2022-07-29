@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91244386a44d0a647b9d3fd53f056592, type: 3}
-  m_Name: SO Player Movement
+  m_Script: {fileID: 11500000, guid: 5ed5ac88efd7a314b99d3fcce51baeae, type: 3}
+  m_Name: Power Up Speed
   m_EditorClassIdentifier: 
-  speedPlayer: 10.5
-  vectorMovement: {x: 0, y: 0, z: 0}
+  amount: 10

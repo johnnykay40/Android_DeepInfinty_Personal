@@ -1,13 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+[CreateAssetMenu(menuName = "SO Deep Infinity / PowerUpEffect/SpeedUp")]
 
 public class SpeedUp : PowerUpEffect
 {
 
     [SerializeField] private float amount;
-    [SerializeField] private override void Apply(GameObject target)
+    [SerializeField] internal override void Apply(GameObject target)
     {
-        target.GetComponent<Speed>().speed.value += amount;
+        target.GetComponent<PlayerMovement>().sOPlayerMovement.speedPlayer += amount;
     } 
 }

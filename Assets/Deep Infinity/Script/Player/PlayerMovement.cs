@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private FixedJoystick fixedJoystick;
 
     [Header("Data")]
-    [SerializeField] private SOPlayerMovement sOPlayerMovement;
+    [SerializeField] internal SOPlayerMovement sOPlayerMovement;
 
     [Header("Physics")]
     [SerializeField] private Rigidbody rigidbodyPlayer;
