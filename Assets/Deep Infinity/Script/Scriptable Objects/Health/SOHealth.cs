@@ -4,5 +4,5 @@
 public class SOHealth : ScriptableObject
 {
     [Range(0, 1000)]
-    [SerializeField] private float health;
+    [SerializeField] internal float health;
 }
