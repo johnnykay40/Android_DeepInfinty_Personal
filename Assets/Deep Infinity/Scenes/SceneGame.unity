@@ -1387,7 +1387,11 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
+<<<<<<< Updated upstream
     m_SensorSize: {x: 0.5625, y: 1}
+=======
+    m_SensorSize: {x: 3.0660148, y: 1}
+>>>>>>> Stashed changes
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1696,8 +1700,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1800383471}
   - component: {fileID: 1800383473}
+<<<<<<< Updated upstream
   - component: {fileID: 1800383472}
   - component: {fileID: 1800383474}
+=======
+  - component: {fileID: 1800383475}
+  - component: {fileID: 1800383476}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1721,21 +1730,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1800383472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800383470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8414909255331f34f986eff647d9d347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedJoystick: {fileID: 1494813385}
-  sOPlayerMovement: {fileID: 11400000, guid: 2886e60a2d73977468c5721e4024a0f0, type: 2}
-  rigidbodyPlayer: {fileID: 1800383473}
 --- !u!54 &1800383473
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1752,6 +1746,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< Updated upstream
 --- !u!114 &1800383474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,6 +1762,10 @@ MonoBehaviour:
   boundary: {fileID: 11400000, guid: 0e5f938a69ddc764f8b747ba9168b95d, type: 2}
 --- !u!1 &1863836032
 GameObject:
+=======
+--- !u!65 &1800383475
+BoxCollider:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1901,9 +1900,30 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915699804}
   m_Enabled: 1
+<<<<<<< Updated upstream
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d530883a5de310f4eb3cde6f16df102c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthMax: 0
   healthCurrent: 0
+=======
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1800383476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800383470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e08bf7a29b63c042b110c1ad48b9982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 15
+  playerRigibody: {fileID: 1800383473}
+  fixedJoystick: {fileID: 1494813385}
+>>>>>>> Stashed changes
