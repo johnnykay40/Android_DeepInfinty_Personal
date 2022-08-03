@@ -636,6 +636,12 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!4 &542506850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 223963617762747436, guid: 406f09bf174dbee4a96cda8bf938977e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1697410756}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &565764091
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +813,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &830528078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 830528079}
+  m_Layer: 0
+  m_Name: Rocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &830528079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830528078}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 542506850}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1263,28 @@ Transform:
   m_Father: {fileID: 1562862200}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1150717072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7231998765438845984, guid: 406f09bf174dbee4a96cda8bf938977e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1697410756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1150717074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150717072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d492d758ff36d1488a985ac7f082c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerBullet: {fileID: 3860220018700381729, guid: ea160ffbe1f05d343b45f9ab1e6680c7,
+    type: 3}
+  poolSize: 10
+  laserList: []
 --- !u!1 &1281064431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,7 +1295,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1281064434}
   - component: {fileID: 1281064433}
-  - component: {fileID: 1281064432}
   m_Layer: 5
   m_Name: Health Bar
   m_TagString: Untagged
@@ -1244,49 +1302,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1281064432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281064431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b35d1b4cba2299d4ea5a4b6d2dc74a46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1281064433}
-  gradient:
-    serializedVersion: 2
-    key0: {r: 0.9716981, g: 0.03208439, b: 0.03208439, a: 1}
-    key1: {r: 0.93524826, g: 1, b: 0.0141509175, a: 1}
-    key2: {r: 0.0141509175, g: 1, b: 0.070891656, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 13107
-    ctime1: 39321
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  fill: {fileID: 331206163}
 --- !u!114 &1281064433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1392,6 +1407,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1377371054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6066348997662090008, guid: 406f09bf174dbee4a96cda8bf938977e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1697410756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1377371056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377371054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d492d758ff36d1488a985ac7f082c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerBullet: {fileID: 3860220018700381729, guid: ea160ffbe1f05d343b45f9ab1e6680c7,
+    type: 3}
+  poolSize: 10
+  laserList: []
 --- !u!1001 &1428393317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1732,6 +1769,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1800383471}
     m_Modifications:
+    - target: {fileID: 3364988788417239892, guid: 406f09bf174dbee4a96cda8bf938977e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3646334275575123379, guid: 406f09bf174dbee4a96cda8bf938977e,
         type: 3}
       propertyPath: m_RootOrder
@@ -1816,6 +1858,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462884887126393341, guid: 406f09bf174dbee4a96cda8bf938977e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462884887126393341, guid: 406f09bf174dbee4a96cda8bf938977e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705072561803231895, guid: 406f09bf174dbee4a96cda8bf938977e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005619220590416478, guid: 406f09bf174dbee4a96cda8bf938977e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.69
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 406f09bf174dbee4a96cda8bf938977e, type: 3}
@@ -1977,6 +2039,8 @@ GameObject:
   - component: {fileID: 1800383473}
   - component: {fileID: 1800383474}
   - component: {fileID: 1800383475}
+  - component: {fileID: 1800383476}
+  - component: {fileID: 1800383477}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2029,6 +2093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 15
+  laserOffSet: 0.5
   playerRigidbody: {fileID: 1800383473}
   fixedJoystick: {fileID: 1494813385}
 --- !u!114 &1800383475
@@ -2045,7 +2110,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  playerHealthBar: {fileID: 1281064432}
+  playerHealthBar: {fileID: 1800383476}
+--- !u!114 &1800383476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800383470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35d1b4cba2299d4ea5a4b6d2dc74a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1281064433}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.9716981, g: 0.03208439, b: 0.03208439, a: 1}
+    key1: {r: 0.93524826, g: 1, b: 0.0141509175, a: 1}
+    key2: {r: 0.0141509175, g: 1, b: 0.070891656, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 13107
+    ctime1: 39321
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 1
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  fill: {fileID: 331206163}
+--- !u!114 &1800383477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800383470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e4bc5a410c00a4681da467686117ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerBullet: {fileID: 6203020722261857573, guid: e0100db88307ec0488749c8b3d7d346c,
+    type: 3}
+  poolSize: 1
+  laserList: []
+  rocketButton: {fileID: 1863836034}
+  rocketPosition: {fileID: 830528079}
 --- !u!1 &1863836032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,7 +2277,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
