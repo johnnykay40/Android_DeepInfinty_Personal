@@ -10,11 +10,38 @@ public class PlayerFire : MonoBehaviour
     [SerializeField] private List<GameObject> laserList;
     [SerializeField] private Button rocketButton;
     [SerializeField] private Transform rocketPosition;
+    [SerializeField] private Image rocketFillAmountImage;
+    [SerializeField] private bool isRocketActive;
+    [SerializeField] private float rocketFillGauge;
 
     private void Start()
     {
         rocketButton.onClick.AddListener(RequestLaser);
         AddLaserToPool(poolSize);
+    }
+
+    private void Update()
+    {
+        CheckRocketFillAmount();
+    }
+
+    private void CheckRocketFillAmount()
+    {
+        if (rocketFillAmountImage.fillAmount <= 1.1f)
+        {
+            rocketFillAmountImage.fillAmount += rocketFillGauge * Time.deltaTime;
+        }
+
+        if (rocketFillAmountImage.fillAmount == 1)
+        {
+            isRocketActive = true;
+            rocketButton.interactable = true; 
+        }
+        else
+        {
+            isRocketActive = false;
+            rocketButton.interactable = false;
+        }
     }
     private void AddLaserToPool(int amount)
     {
@@ -29,16 +56,20 @@ public class PlayerFire : MonoBehaviour
 
     internal void RequestLaser()
     {
-        for (int i = 0; i < laserList.Count; i++)
+        if (isRocketActive)
         {
-            if (!laserList[i].activeInHierarchy)
+            for (int i = 0; i < laserList.Count; i++)
             {
-                laserList[i].SetActive(true);
-                laserList[i].transform.position = rocketPosition.position;
-                laserList[i].transform.rotation = rocketPosition.rotation;
+                if (!laserList[i].activeInHierarchy)
+                {
+                    laserList[i].SetActive(true);
+                    laserList[i].transform.position = rocketPosition.position;
+                    laserList[i].transform.rotation = rocketPosition.rotation;
 
-                break;
-            }
+                    break;
+                }
+            }            
+            rocketFillAmountImage.fillAmount = 0;
         }
     }
 }

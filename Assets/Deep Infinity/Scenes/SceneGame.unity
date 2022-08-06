@@ -2172,6 +2172,9 @@ MonoBehaviour:
   laserList: []
   rocketButton: {fileID: 1863836034}
   rocketPosition: {fileID: 830528079}
+  rocketFillAmountImage: {fileID: 1863836035}
+  isRocketActive: 0
+  rocketFillGauge: 0.2
 --- !u!1 &1863836032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,7 +2284,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0

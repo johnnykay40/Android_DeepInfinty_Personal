@@ -128,6 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e468e2cd1de209c4aa35bba7a11afa73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserSpeed: 10
+  laserSpeed: 40
   laserRigidBody: {fileID: -295699003739182533}
   deactivateBulletTime: 6
